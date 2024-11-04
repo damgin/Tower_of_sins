@@ -3,9 +3,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <stdbool.h>
 
+typedef int boo;
 
-typedef struct {
+/**
+ * endurence == mana comme pour l'or on rennomera "endurence"
+ */
+typedef struct CapaciteSpeciale{  
     char nom[30];
     int puissance;
     int cout_endurance;
@@ -26,7 +31,6 @@ typedef struct {
     int endurance;
     int morale;
     CapaciteSpeciale capacite;
-    bool est_leader;
     Equipement inventaire[10];
     int nb_objets_inventaire;
 } Personnage;
@@ -38,7 +42,6 @@ typedef struct {
 
    
 } Equipe;
-
 
 
 int main() {
@@ -53,7 +56,7 @@ int main() {
     equipe.personnages[0].pv_actuel = 100;
     equipe.personnages[0].endurance = 80;
     equipe.personnages[0].morale = 60;
-    equipe.personnages[0].est_leader = true;
+    
 
     ////////////ERUDIT
     strcpy(equipe.personnages[1].nom, "Jean");
@@ -62,7 +65,7 @@ int main() {
     equipe.personnages[1].pv_actuel = 70;
     equipe.personnages[1].endurance = 100;
     equipe.personnages[1].morale = 80;
-    equipe.personnages[1].est_leader = false;
+    
 
     ////////////MARAUDEUR
     strcpy(equipe.personnages[2].nom, "Casca");
@@ -71,7 +74,39 @@ int main() {
     equipe.personnages[2].pv_actuel = 80;
     equipe.personnages[2].endurance = 90;
     equipe.personnages[2].morale = 50;
-    equipe.personnages[2].est_leader = false;
-
+    
+    printf("                        🦇\n");
+    printf("                    🦇      🦇\n");
+    printf("                         ^\n");
+    printf("                        ||\n");
+    printf("                        ||\n");
+    printf("                       /||\\\n");
+    printf("                     __||||__\n");
+    printf("                    |  ||||  |\n");
+    printf("                    |  ||||  |\n");
+    printf("                    |__||||__|\n");
+    printf("                    |  ||||  |\n");
+    printf("                    |  ||||  |\n");
+    printf("                 ___|__||||__|___\n");
+    printf("                |     ||||      |\n");
+    printf("                |     ||||      |\n");
+    printf("                |_____|  |______|\n");
+    printf("                |     ||||      |\n");
+    printf("                |     ||||      |\n");
+    printf("             ___|_____|  |______|___\n");
+    printf("             |        ||||          |\n");
+    printf("             |        ||||          |\n");
+    printf("             |________|  |__________|\n");
+    printf("             |        ||||          |\n");
+    printf("             |        ||||          |\n");
+    printf("         ____|________|  |__________|____\n");
+    printf("          |           ||||              |\n");
+    printf("          |           ||||              |\n");
+    printf("          |___________|  |______________|\n");
+    printf("          |           ||||              |\n");
+    printf("          |           ||||              |\n");
+    printf("      ____|___________|  |______________|____\n");
+    printf("           🦇          🦇       🦇\n");
+    printf("               🦇             🦇\n");
     return 0;
 }
