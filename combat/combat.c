@@ -8,10 +8,12 @@
 #define choix2 2
 #define choix3 3
 #define QUITTER 0
+#include "../ennemies/garde_des_limbes.c"
+#include "personnage.c"
 
-int main(){
+int combat(int ennemie){
 
-    while(joueur.pv > 0){
+    while(joueur.pv > 0 || ennemie.pv > 0){
     //inventaire
     //personnage
     //ennemie
