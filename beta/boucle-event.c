@@ -25,7 +25,7 @@ void event_handler(){
     int event = (float)rand()/RAND_MAX *10+1;
     printf("%d\n",event);
 
-    if (event == 1)
+    if (event == 1 || event > 1)
     {
         printf("Vous Entrez dans la porte du mal");
         
