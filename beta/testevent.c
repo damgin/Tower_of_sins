@@ -1,29 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include 
 
-
-    
-typedef struct CapaciteSpeciale{  
-    char nom[30];
-    int puissance;
-    int cout_endurance;
-} CapaciteSpeciale;
-
-typedef struct Equipement{
-    char nom[30];
-    int effet_pv;
-    int effet_endurance;
-    int effet_morale;
-} Equipement;
-
-typedef struct Personnage{
-    char nom[30];
-    char classe[20];
-    int pv_max;
-    int pv_actuel;
-    int degat;
 typedef struct CapaciteSpeciale{  
     char nom[30];
     int puissance;
@@ -60,16 +38,7 @@ void eventdhjvruez(){
     equipe.personnages[0].degat = 20;
     equipe.personnages[0].endurance = 80;
     equipe.personnages[0].morale = 60;
-    
-    
-    FILE * open 
 
-
-    afficher file
-
-
-
-    
 };
 
 
@@ -87,19 +56,6 @@ void eventdhjvruez(){
 //     Effet : Baisse ton endurance (-20) car l'effort est épuisant, mais augmente ta morale (+10) car tu as essayé de contrôler la situation.
 
 
-
-int fonction event(){
-    void eventdhjvruez(){ 100pv
-
-    if 1
-    ta perdu -20pv
-
-
-    modifier les pv 
-    
-
-    return 0;
-}
 
 
 
@@ -137,6 +93,8 @@ void anas(t_perso* persoprincipal) {
         fclose(fichier);
 
 }
+
+
 
 int main() {
     char ligne[1000];
