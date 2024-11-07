@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 
 // #include "personnage.c"
 
@@ -46,7 +46,7 @@ void statsplayer(){
     personnage.endurance = 80;
     personnage.morale = 60;
     
-    FILE* fichier = fopen("stats.txt"," a+");
+    FILE* fichier = fopen("stats"," a+");
 
     fprintf(fichier,"Personnage nom : %s\n",personnage.nom);
     fprintf(fichier,"Personnage classe : %s\n",personnage.classe);
@@ -56,4 +56,13 @@ void statsplayer(){
     fprintf(fichier,"Personnage endurance : %d\n",personnage.endurance);
     fprintf(fichier,"Personnage morale : %d\n",personnage.morale);
 
+    fseek(fichier,0,SEEK_SET);
+    // fclose(fichier);
+}
+
+
+int main(){
+
+    void statsplayer();
+    return 0;
 }
