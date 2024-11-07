@@ -45,8 +45,12 @@ void statsplayer(){
     personnage.degat = 20;
     personnage.endurance = 80;
     personnage.morale = 60;
+
+
+    // printf("%s\n",personnage.nom);
+
+    FILE* fichier = fopen("stats","a+");
     
-    FILE* fichier = fopen("stats"," a+");
 
     fprintf(fichier,"Personnage nom : %s\n",personnage.nom);
     fprintf(fichier,"Personnage classe : %s\n",personnage.classe);
@@ -56,13 +60,20 @@ void statsplayer(){
     fprintf(fichier,"Personnage endurance : %d\n",personnage.endurance);
     fprintf(fichier,"Personnage morale : %d\n",personnage.morale);
 
-    fseek(fichier,0,SEEK_SET);
-    // fclose(fichier);
+
+
+    // fseek(fichier,0,SEEK_SET);
+    fclose(fichier);
 }
 
 
 int main(){
-
-    void statsplayer();
+    
+    statsplayer();
     return 0;
+    
+    //   if (fichier == NULL) {
+    //     printf("Erreur : Impossible d'ouvrir le fichier.\n");
+    //     return;  // Sortir de la fonction si le fichier n'a pas pu être ouvert
+    // }
 }
