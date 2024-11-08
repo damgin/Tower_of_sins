@@ -80,7 +80,7 @@ int main() {
     char buf[255];
     
     printf("                        🦇\n");
-    printf("                    🦇      🦇\n");
+    printf("                    🦇  oh koman    🦇\n");
     printf("                         ^\n");
     printf("                        ||\n");
     printf("                        ||\n");

@@ -1,13 +1,4 @@
-
-#include "C:\Users\ant97\Desktop\TOWER_OF_SINS\Tower_of_sins\personnages\personnage.c"
-
-typedef struct CapaciteSpeciale {  
-    char nom[30];
-    int puissance;
-    int cout_endurance;
-} CapaciteSpeciale;
-
-
+#include "/home/user/Bureau/exo/Tower_of_sins/Tower_of_sins/personnages/personnage.c"
 
 void comportement_garde_des_limbes(personnage *garde, personnage *cible) {
 

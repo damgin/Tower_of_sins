@@ -1,11 +1,13 @@
+- nom Falthes
+classe Soldat
+pv_max 100
+pv_actuel 80
+degat 25
+endurance 50
+morale 80 -
+
 {
-  "nom": "Falthes",
-  "classe": "Soldat",
-  "pv_max": 100,
-  "pv_actuel": 80,
-  "degat": 25,
-  "endurance": 50,
-  "morale": 80,
+  /*
   "capacite": [
     {
       "nom": "Attaque de Rage",
@@ -24,7 +26,7 @@
     },
     {
       "nom": "Bouclier",
-      "puissance": 0,
+      "puissance": 20,
       "cout_endurance": 15
     },
     {
@@ -33,6 +35,8 @@
       "cout_endurance": 18
     }
   ],
+  */
+  /*
   "inventaire": [
     {
       "nom": "Potion de soin",
@@ -48,4 +52,5 @@
     }
   ],
   "nb_objets_inventaire": 2
+  */
 }
