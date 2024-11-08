@@ -25,52 +25,68 @@ void event_handler(){
     int event = (float)rand()/RAND_MAX *10+1;
     printf("%d\n",event);
 
-    if (event == 1 || event > 1)
-    {
-        printf("Vous Entrez dans la porte du mal");
+switch (event)
+{
+case 1:
+     printf("Vous Entrez dans la porte du mal");
+    break;
+case 2:
+
+    break;
+
+default:
+    break;
+}
+}
+
+
+
+//     if (event == 1 || event > 1)
+//     {
+//         printf("Vous Entrez dans la porte du mal");
         
-    }
-    else if (event == 2)
-    {
-       printf("Vous Entrez dans la porte du mal2");
-    }
-    else if (event == 3)
-    {
-          printf("Vous Entrez dans la porte du mal2");
-    }
-     else if (event == 4)
-    {
-          printf("Vous Entrez dans la porte du mal2");
-    }
-     else if (event == 5)
-    {
-          printf("Vous Entrez dans la porte du mal2");
-    }
-     else if (event == 6)
-    {
-        /* code */
-    }
-    else if (event == 7)
-    {
-        /* code */
-    }
-     else if (event == 8)
-    {
-        /* code */
-    }
-     else if (event == 9)
-    {
-        /* code */
-    }
-     else if (event == EVENT_FIGHT)
-    {
-        /* code */
-        // combat()
-    }
+//     }
+//     else if (event == 2)
+//     {
+//        printf("Vous Entrez dans la porte du mal2");
+//     }
+//     else if (event == 3)
+//     {
+//           printf("Vous Entrez dans la porte du mal2");
+//     }
+//      else if (event == 4)
+//     {
+//           printf("Vous Entrez dans la porte du mal2");
+//     }
+//      else if (event == 5)
+//     {
+//           printf("Vous Entrez dans la porte du mal2");
+//     }
+//      else if (event == 6)
+//     {
+//         /* code */
+//     }
+//     else if (event == 7)
+//     {
+//         /* code */
+//     }
+//      else if (event == 8)
+//     {
+//         /* code */
+//     }
+//      else if (event == 9)
+//     {
+//         /* code */
+//     }
+//      else if (event == EVENT_FIGHT)
+//     {
+//         /* code */
+//         // combat()
+//     }
     
     
 
-}
+// }
 
 int main(){
     int event;

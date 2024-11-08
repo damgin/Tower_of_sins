@@ -2,8 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
-// #include "personnage.c"
+#define PASSER 1
+#define ENTRER 2
+#define QUITTER 0
 
+// #include "personnage.c"
 
 
 typedef struct CapaciteSpeciale{  
@@ -49,7 +52,8 @@ void statsplayer(){
 
     // printf("%s\n",personnage.nom);
 
-    FILE* fichier = fopen("stats","a+");
+    FILE* fichier = fopen("stats","w+");
+    
     
 
     fprintf(fichier,"Personnage nom : %s\n",personnage.nom);
@@ -61,14 +65,39 @@ void statsplayer(){
     fprintf(fichier,"Personnage morale : %d\n",personnage.morale);
 
 
-
     // fseek(fichier,0,SEEK_SET);
     fclose(fichier);
+
+
+
+    printf("Après avoir exploré un long couloir peu éclairé, vous croisez une lourde porte en chène\n");
+    printf("que faite vous ?\n");
+    printf("1/ continuer votre chemin\n");
+    printf("2/ entrer dans la pièce\n");
+
+    char buff[255];
+    memset(buff,0,255);
+    fgets(buff,0,stdin);
+    buff[strlen(buff)-1]=0;
+
+
+
+    switch ()
+    {
+    case 1:
+        /*coder pour relancer random event*/
+        break;
+    case 2:
+        /*entrer dans la piece et decouvrir l'histoire et les choix qui s'offre a nous*/
+        break;
+    }
+
+
 }
 
 
 int main(){
-    
+
     statsplayer();
     return 0;
     
