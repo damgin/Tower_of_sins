@@ -16,14 +16,14 @@ typedef struct CapaciteSpeciale{
     int cout_endurance;
 } CapaciteSpeciale;
 
-typedef struct {
+typedef struct Equipement{
     char nom[30];
     int effet_pv;
     int effet_endurance;
     int effet_morale;
 } Equipement;
 
-typedef struct {
+typedef struct Personnage{
     char nom[30];
     char classe[20];
     int pv_max;
@@ -37,7 +37,7 @@ typedef struct {
 } Personnage;
 
 
-typedef struct {
+typedef struct Equipe {
     Personnage personnages[3];  
     int nb_personnages;         
 
