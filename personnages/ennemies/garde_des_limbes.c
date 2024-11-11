@@ -1,4 +1,4 @@
-#include "/home/user/Bureau/exo/Tower_of_sins/Tower_of_sins/personnages/personnage.c"
+#include "personnages\personnage.c"
 
 void comportement_garde_des_limbes(personnage *garde, personnage *cible) {
 

@@ -1,23 +1,21 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include "personnages/ennemies/garde_des_limbes.c"
+
+#include "C:\\Users\\ant97\\Desktop\\TOWER_OF_SINS\\Tower_of_sins\\personnages\\ennemies\\garde_des_limbes.c"
 
 
-
-/// convertir ennemie en E
-/// convertir joueur en P
-//gl
+#include "init_player.c"
 
 
 
 void combat() {
-    personnage* p;
-    FILE * fd = fopen("Falthes.txt","r");
-    init_player (p);
-    personnage* e;
-    spawn_garde_des_limbes (e);
+    
+personnage player; 
+init_player(&player); 
+
+personnage enemy; 
+spawn_garde_des_limbes(&enemy); 
+
+personnage* p = &player;
+personnage* e = &enemy;  
 
 
     int choix;

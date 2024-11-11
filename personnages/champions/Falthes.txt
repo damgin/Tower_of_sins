@@ -1,56 +1,22 @@
-- nom Falthes
-classe Soldat
-pv_max 100
-pv_actuel 80
-degat 25
-endurance 50
-morale 80 -
-
-{
-  /*
-  "capacite": [
-    {
-      "nom": "Attaque de Rage",
-      "puissance": 40,
-      "cout_endurance": 10
-    },
-    {
-      "nom": "Soin Rapide",
-      "puissance": 20,
-      "cout_endurance": 5
-    },
-    {
-      "nom": "Coup de Grâce",
-      "puissance": 60,
-      "cout_endurance": 20
-    },
-    {
-      "nom": "Bouclier",
-      "puissance": 20,
-      "cout_endurance": 15
-    },
-    {
-      "nom": "Charge Dévastatrice",
-      "puissance": 50,
-      "cout_endurance": 18
-    }
-  ],
-  */
-  /*
-  "inventaire": [
-    {
-      "nom": "Potion de soin",
-      "effet_pv": 20,
-      "effet_endurance": 0,
-      "effet_morale": 0
-    },
-    {
-      "nom": "Elixir de force",
-      "effet_pv": 0,
-      "effet_endurance": 15,
-      "effet_morale": 0
-    }
-  ],
-  "nb_objets_inventaire": 2
-  */
-}
+Nom: Falthes
+PV Max: 150
+PV Actuels: 150
+Dégâts: 20
+Endurance: 30
+Bouclier: 5
+Poison: 0
+Tours de poison: 0
+Effet Bouclier: 1
+Effet Poison: 0
+Capacité 1:
+  Nom: Souffle de feu
+  Puissance: 40
+  Coût Endurance: 10
+Capacité 2:
+  Nom: Coup de bouclier
+  Puissance: 10
+  Coût Endurance: 5
+Capacité 3:
+  Nom: Soin rapide
+  Puissance: 30
+  Coût Endurance: 15
