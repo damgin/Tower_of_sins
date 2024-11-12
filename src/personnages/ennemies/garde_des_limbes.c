@@ -1,4 +1,3 @@
-#include "personnages\personnage.c"
 
 void comportement_garde_des_limbes(personnage *garde, personnage *cible) {
 

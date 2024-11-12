@@ -1,21 +1,13 @@
 
-#include "C:\\Users\\ant97\\Desktop\\TOWER_OF_SINS\\Tower_of_sins\\personnages\\ennemies\\garde_des_limbes.c"
-
-
-#include "init_player.c"
-
-
-
 void combat() {
-    
-personnage player; 
-init_player(&player); 
+        
+    personnage player = get_player(); 
 
-personnage enemy; 
-spawn_garde_des_limbes(&enemy); 
+    personnage enemy; 
+    spawn_garde_des_limbes(&enemy); 
 
-personnage* p = &player;
-personnage* e = &enemy;  
+    personnage* p = &player;
+    personnage* e = &enemy;  
 
 
     int choix;
@@ -34,13 +26,13 @@ personnage* e = &enemy;
 
         switch (choix) {
             case 1:
-                attaquer(p, e);
+                // attaquer(p, e); // to implement
                 break;
             case 2:
                 printf("Choisissez une capacité (0-4): ");
                 int capacite_index;
                 scanf("%d", &capacite_index);
-                utiliserCapacite(p, e, capacite_index);
+                // utiliserCapacite(p, e, capacite_index); // to implement
                 break;
             case 3:
                 printf("%s passe son tour.\n", p->nom);

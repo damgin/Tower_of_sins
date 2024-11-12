@@ -1,12 +1,15 @@
-void init_player(personnage *p) {
-    FILE *fd = fopen("Falthes.txt", "r");
+
+personnage get_player() {
+
+    personnage p;
+
+    FILE *fd = fopen("personnage.txt", "r");
     if (fd == NULL) {
         printf("Erreur lors de l'ouverture du fichier.\n");
-        return;
+        return p;
     }
 
-    char buf[255];
-    memset(buf, 0, 255);
+    char buf[255]; memset(buf, 0, 255);
 
     
     while (fgets(buf, sizeof(buf), fd) != NULL) {
@@ -16,7 +19,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");  
             token = strtok(NULL, "\n");     
             if (token != NULL) {
-                strcpy(p->nom, token);  
+                strcpy(p.nom, token);  
             }
         }
         
@@ -25,7 +28,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->pv_max = atoi(token);  // Convertit en entier
+                p.pv_max = atoi(token);  // Convertit en int
             }
         }
         
@@ -34,7 +37,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->pv_actuel = atoi(token);
+                p.pv_actuel = atoi(token);
             }
         }
         
@@ -43,7 +46,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->degat = atoi(token);
+                p.degat = atoi(token);
             }
         }
         
@@ -52,7 +55,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->endurance = atoi(token);
+                p.endurance = atoi(token);
             }
         }
         
@@ -61,7 +64,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->bouclier = atoi(token);
+                p.bouclier = atoi(token);
             }
         }
         
@@ -70,7 +73,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->poison = atoi(token);
+                p.poison = atoi(token);
             }
         }
         
@@ -79,7 +82,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->tour_poison = atoi(token);
+                p.tour_poison = atoi(token);
             }
         }
         
@@ -88,7 +91,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->effet_bouclier = atoi(token);
+                p.effet_bouclier = atoi(token);
             }
         }
         
@@ -97,7 +100,7 @@ void init_player(personnage *p) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
             if (token != NULL) {
-                p->effet_poison = atoi(token);
+                p.effet_poison = atoi(token);
             }
         }
 
@@ -110,7 +113,7 @@ void init_player(personnage *p) {
                 char* token = strtok(buf, ":");
                 token = strtok(NULL, "\n");
                 if (token != NULL) {
-                    strcpy(p->capacite[capacite_index].nom, token);
+                    strcpy(p.capacite[capacite_index].nom, token);
                 }
 
                 //  puissance
@@ -118,7 +121,7 @@ void init_player(personnage *p) {
                 token = strtok(buf, ":");
                 token = strtok(NULL, "\n");
                 if (token != NULL) {
-                    p->capacite[capacite_index].puissance = atoi(token);
+                    p.capacite[capacite_index].puissance = atoi(token);
                 }
 
                 //coût d'endurance 
@@ -126,7 +129,7 @@ void init_player(personnage *p) {
                 token = strtok(buf, ":");
                 token = strtok(NULL, "\n");
                 if (token != NULL) {
-                    p->capacite[capacite_index].cout_endurance = atoi(token);
+                    p.capacite[capacite_index].cout_endurance = atoi(token);
                 }
             }
         }
