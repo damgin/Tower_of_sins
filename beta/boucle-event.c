@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 
-#define event1 1
+#define E_COMBAT 1
 #define event2 2
 #define event3 3
 #define event4 4 
@@ -14,7 +14,7 @@
 #define event7 7 
 #define event8 8 
 #define event9 9
-#define EVENT_FIGHT 10
+#define event10 10
 
 
 void event_handler(){
@@ -23,16 +23,18 @@ void event_handler(){
 
 
     int event = (float)rand()/RAND_MAX *10+1;
-    printf("%d\n",event);
+    // printf("%d\n",event);
 
 switch (event)
 {
 case 1:
-     printf("Vous Entrez dans la porte du mal");
+    printf("Combat");
     break;
 case 2:
-
+    printf("event 2 ");
     break;
+case 3:
+    printf("event 3");
 
 default:
     break;
@@ -88,14 +90,6 @@ default:
 
 // }
 
-int main(){
-    int event;
-    srand(time(NULL));  
-
-   event_handler(event);
-   
-    return 0;
-}
 
 
 
