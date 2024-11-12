@@ -8,19 +8,19 @@ void init_player(personnage *p) {
     char buf[255];
     memset(buf, 0, 255);
 
-    // Lire chaque ligne du fichier
+    
     while (fgets(buf, sizeof(buf), fd) != NULL) {
-        // Extraire le nom
+        
         if (strncmp(buf, "Nom:", 4) == 0) {
-            // Utiliser strtok pour extraire le nom après "Nom: "
-            char* token = strtok(buf, ":");  // Divise par ":"
-            token = strtok(NULL, "\n");      // Divise par le saut de ligne
+            
+            char* token = strtok(buf, ":");  
+            token = strtok(NULL, "\n");     
             if (token != NULL) {
-                strcpy(p->nom, token);  // Copie le nom du joueur
+                strcpy(p->nom, token);  
             }
         }
         
-        // Extraire les PV Max
+        // PV Max
         else if (strncmp(buf, "PV Max:", 7) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -29,7 +29,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire les PV Actuels
+        //PV Actuels
         else if (strncmp(buf, "PV Actuels:", 11) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -38,7 +38,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire les Dégâts
+        // Dégâts
         else if (strncmp(buf, "Dégâts:", 7) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -47,7 +47,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire l'Endurance
+        // Endurance
         else if (strncmp(buf, "Endurance:", 10) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -56,7 +56,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire le Bouclier
+        // Bouclier
         else if (strncmp(buf, "Bouclier:", 9) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -65,7 +65,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire le Poison
+        // Poison
         else if (strncmp(buf, "Poison:", 7) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -74,7 +74,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire les Tours de Poison
+        // Tours de Poison
         else if (strncmp(buf, "Tours de poison:", 16) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -83,7 +83,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire l'Effet Bouclier
+        // Effet Bouclier
         else if (strncmp(buf, "Effet Bouclier:", 15) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -92,7 +92,7 @@ void init_player(personnage *p) {
             }
         }
         
-        // Extraire l'Effet Poison
+        // Effet Poison
         else if (strncmp(buf, "Effet Poison:", 13) == 0) {
             char* token = strtok(buf, ":");
             token = strtok(NULL, "\n");
@@ -101,11 +101,11 @@ void init_player(personnage *p) {
             }
         }
 
-        // Extraire les Capacités
+        // les Capacités
         else if (strncmp(buf, "Capacité", 8) == 0) {
             int capacite_index = (buf[9] - '1'); // Capacité 1 -> index 0, etc.
             if (capacite_index >= 0 && capacite_index < 3) {
-                // Lire le nom de la capacité
+                //  nom de la capacité
                 fgets(buf, sizeof(buf), fd);
                 char* token = strtok(buf, ":");
                 token = strtok(NULL, "\n");
@@ -113,7 +113,7 @@ void init_player(personnage *p) {
                     strcpy(p->capacite[capacite_index].nom, token);
                 }
 
-                // Lire la puissance de la capacité
+                //  puissance
                 fgets(buf, sizeof(buf), fd);
                 token = strtok(buf, ":");
                 token = strtok(NULL, "\n");
@@ -121,7 +121,7 @@ void init_player(personnage *p) {
                     p->capacite[capacite_index].puissance = atoi(token);
                 }
 
-                // Lire le coût d'endurance de la capacité
+                //coût d'endurance 
                 fgets(buf, sizeof(buf), fd);
                 token = strtok(buf, ":");
                 token = strtok(NULL, "\n");
