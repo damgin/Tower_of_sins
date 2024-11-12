@@ -1,9 +1,12 @@
-#include <stdio.h>
-#include <string.h>
+
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include "C:\Users\ant97\Desktop\TOWER_OF_SINS\Tower_of_sins\personnages\ennemies\garde_des_limbes.c"
+
 #define choix1 1
 #define choix2 2
 #define choix3 3
@@ -56,6 +59,8 @@ int main(){
         printf("Vous entrée dans la pièce, vous distinguer une lumière diffuse au millieu d'une nape de brouillard.\n");
         printf("l'air vous semble nosée a bonde??, sous vos pied le sol est tacher d'un sang froid et épais.\n");
         printf("vous rencontrer une coatrix, préparer vous au combat!\n");
+        personnage garde;
+        spawn_garde_des_limbes()
         //fonctioncombat
     }
 
