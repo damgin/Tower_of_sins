@@ -26,8 +26,12 @@ void combat() {
 
         switch (choix) {
             case 1:
-                // attaquer(p, e); // to implement
-                break;
+                printf("%s attaque normalement %s avec des dégâts de %d.\n", p->nom, e->nom, p->degat);
+        e->pv_actuel -= p->degat;  // Applique les dégâts de l'attaque normale
+        if (e->pv_actuel < 0) {
+            e->pv_actuel = 0;   ///pour éviter les bug (pv négatif qui proc pas la fin de combat)
+        }
+               
             case 2:
                 printf("Choisissez une capacité (0-4): ");
                 int capacite_index;
