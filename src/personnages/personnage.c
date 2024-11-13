@@ -1,3 +1,7 @@
+
+/**
+ * endurence == mana comme pour l'or on rennomera "endurence"
+ */
 typedef struct CapaciteSpeciale{  
     char nom[30];
     int puissance;
@@ -23,5 +27,7 @@ typedef struct personnage {
     int effet_bouclier; // Flag  bouclier
     int effet_poison;   // Flag poison
     CapaciteSpeciale capacite[3];
-    (void) (*)(personnage*,personnage*) p_comportement; ///a regarder
+    ////(void) (*)(personnage*,personnage*) p_comportement; ///a regarder
 } personnage;
+
+

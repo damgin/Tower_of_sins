@@ -59,7 +59,7 @@ int main(){
         printf("Vous entrée dans la pièce, vous distinguer une lumière diffuse au millieu d'une nape de brouillard.\n");
         printf("l'air vous semble nosée a bonde??, sous vos pied le sol est tacher d'un sang froid et épais.\n");
         printf("vous rencontrer une coatrix, préparer vous au combat!\n");
-        personnage garde
+        personnage garde;
         spawn_garde_des_limbes()
         //fonctioncombat
     }

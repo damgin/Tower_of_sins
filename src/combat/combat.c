@@ -1,20 +1,17 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdbool.h>
+
+void combat() {
+        
+    personnage player = get_player(); 
+
+    personnage enemy; 
+    spawn_garde_des_limbes(&enemy); 
+
+    personnage* p = &player;
+    personnage* e = &enemy;  
 
 
-#include "C:\Users\ant97\Desktop\TOWER_OF_SINS\Tower_of_sins\personnages\personnage.c"
-
-
-
-/// convertir ennemie en E
-/// convertir joueur en P
-//gl
-
-void combat(Personnage *p, Ennemie *e) {
     int choix;
-    
+
     while (p->pv_actuel > 0 && e->pv_actuel > 0) {
         printf("\n--- Tour du joueur ---\n");
         //afficherEtatPersonnage(p);
@@ -29,13 +26,13 @@ void combat(Personnage *p, Ennemie *e) {
 
         switch (choix) {
             case 1:
-                attaquer(p, e);
+                // attaquer(p, e); // to implement
                 break;
             case 2:
                 printf("Choisissez une capacité (0-4): ");
                 int capacite_index;
                 scanf("%d", &capacite_index);
-                utiliserCapacite(p, e, capacite_index);
+                // utiliserCapacite(p, e, capacite_index); // to implement
                 break;
             case 3:
                 printf("%s passe son tour.\n", p->nom);
@@ -53,7 +50,7 @@ void combat(Personnage *p, Ennemie *e) {
 
         // Action de l'ennemi
         printf("\n--- Tour de l'ennemi ---\n");
-        comportement_garde_des_limbes()    //ajouter player
+        comportement_garde_des_limbes(e,p);   //ajouter player
         // Vérifier si le joueur est mort
         if (p->pv_actuel <= 0) {
             printf("\n%s a été vaincu !\n", p->nom);
@@ -61,6 +58,6 @@ void combat(Personnage *p, Ennemie *e) {
         }
     }
 }
-
+ ///peut on return 0 ?
         ///pointeur sur fonction!!!!!!!!!
-///// void (*)(personnage*,personnage*)
+        ///// void (*)(personnage*,personnage*)
