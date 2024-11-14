@@ -1,4 +1,4 @@
-
+#pragma once
 
 void save_player(personnage *perso) {
     FILE *fichier = fopen("personnage.txt", "w");

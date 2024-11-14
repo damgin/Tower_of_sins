@@ -14,8 +14,8 @@ void combat() {
 
     while (p->pv_actuel > 0 && e->pv_actuel > 0) {
         printf("\n--- Tour du joueur ---\n");
-        //afficherEtatPersonnage(p);
-        //afficherEtatEnnemie(e);
+        
+        afficherInterfaceCombat(p, e);
 
         printf("Choisissez une action:\n");
         printf("1: Attaquer\n");
@@ -33,10 +33,10 @@ void combat() {
         }
                
             case 2:
-                printf("Choisissez une capacité (0-4): ");
+                printf("Choisissez une capacité (0-2): ");
                 int capacite_index;
                 scanf("%d", &capacite_index);
-                // utiliserCapacite(p, e, capacite_index); // to implement
+                utiliserCapacite(p, e, capacite_index); // Utilise la capacité spéciale
                 break;
             case 3:
                 printf("%s passe son tour.\n", p->nom);

@@ -9,11 +9,11 @@ Tours de poison: 0
 Effet Bouclier: 1
 Effet Poison: 0
 Capacité 1:
-  Nom: Souffle de feu
+  Nom: Jugement
   Puissance: 40
   Coût Endurance: 10
 Capacité 2:
-  Nom: Coup de bouclier
+  Nom: bouclier divin
   Puissance: 10
   Coût Endurance: 5
 Capacité 3:
