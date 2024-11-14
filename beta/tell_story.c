@@ -26,8 +26,6 @@ void tell_story(){
 
 
 
-
-
 int i= 0;
 while (tour[i]!='\0')
 {
@@ -48,7 +46,7 @@ while (tour[i]!='\0')
 while (texte[i] != '\0')
 {
     printf("%c",texte[i]);
-    usleep(50000);
+    usleep(30000);
     fflush(stdout);
     i++;
 }
@@ -56,14 +54,13 @@ while (texte[i] != '\0')
 }
 
 
+// int main(){
 
-int main(){
-
-    tell_story();
+//     tell_story();
 
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
