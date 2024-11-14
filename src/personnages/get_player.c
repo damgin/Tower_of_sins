@@ -1,11 +1,10 @@
-
 personnage get_player() {
 
     personnage p;
 
-    FILE *fd = fopen("personnage.txt", "r");
+    FILE *fd = fopen("src/personnages/personnage.txt", "r");
     if (fd == NULL) {
-        printf("Erreur lors de l'ouverture du fichier.\n");
+        perror("fopen personnage.txt");
         return p;
     }
 
@@ -106,34 +105,42 @@ personnage get_player() {
 
         // les Capacités
         else if (strncmp(buf, "Capacité", 8) == 0) {
-            int capacite_index = (buf[9] - '1'); // Capacité 1 -> index 0, etc.
-            if (capacite_index >= 0 && capacite_index < 3) {
+
+            for (int i = 0; i < 3; i++)
+            {
                 //  nom de la capacité
+                memset(buf,0,255);
                 fgets(buf, sizeof(buf), fd);
-                char* token = strtok(buf, ":");
-                token = strtok(NULL, "\n");
-                if (token != NULL) {
-                    strcpy(p.capacite[capacite_index].nom, token);
+                strtok(buf, ":");
+                char * player_name = strtok(NULL, "\n");
+                if (player_name != NULL) {
+                    strcpy(p.capacite[i].nom, player_name);
                 }
 
                 //  puissance
+                memset(buf,0,255);
+
                 fgets(buf, sizeof(buf), fd);
-                token = strtok(buf, ":");
-                token = strtok(NULL, "\n");
-                if (token != NULL) {
-                    p.capacite[capacite_index].puissance = atoi(token);
+                strtok(buf, ":");
+                char* player_puissance = strtok(NULL, "\n");
+                if (player_puissance != NULL) {
+                    p.capacite[i].puissance = atoi(player_puissance);
                 }
 
                 //coût d'endurance 
+                memset(buf,0,255);
+
                 fgets(buf, sizeof(buf), fd);
-                token = strtok(buf, ":");
-                token = strtok(NULL, "\n");
-                if (token != NULL) {
-                    p.capacite[capacite_index].cout_endurance = atoi(token);
+                strtok(buf, ":");
+                char * player_endurance = strtok(NULL, "\n");
+                if (player_endurance != NULL) {
+                    p.capacite[i].cout_endurance = atoi(player_endurance);
                 }
             }
+            
         }
     }
 
     fclose(fd);
+    return p;
 }

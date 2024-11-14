@@ -9,14 +9,14 @@ Tours de poison: 0
 Effet Bouclier: 0
 Effet Poison: 0
 Capacité 1:
-  Nom: Jugement
-  Puissance: 100
-  Coût Endurance: 250
+  Nom:Jugement
+  Puissance:100
+  Coût Endurance:250
 Capacité 2:
-  Nom: bouclier divin
-  Puissance: 100
-  Coût Endurance: 150
+  Nom:bouclier_divin
+  Puissance:100
+  Coût Endurance:150
 Capacité 3:
-  Nom: soin rapide
-  Puissance: 100
-  Coût Endurance: 100
+  Nom:soin_rapide
+  Puissance:100
+  Coût Endurance:100

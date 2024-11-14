@@ -10,5 +10,5 @@
 #include "./personnages/get_player.c"
 #include "./personnages/save_player.c"
 #include "./personnages/ennemies/garde_des_limbes.c"
-#include "./combat/combat.c"
 #include "./combat/capacites.c"
+#include "./combat/combat.c"
