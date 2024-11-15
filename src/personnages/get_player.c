@@ -1,10 +1,14 @@
+#pragma once
+#include "../global.h"
+
 personnage get_player() {
 
     personnage p;
 
-    FILE *fd = fopen("src/personnages/personnage.txt", "r");
+    FILE *fd = fopen("personnages/player","r");
+    perror("fopen");
     if (fd == NULL) {
-        perror("fopen personnage.txt");
+        perror("fopen player");
         return p;
     }
 
@@ -108,6 +112,8 @@ personnage get_player() {
 
             for (int i = 0; i < 3; i++)
             {
+               
+
                 //  nom de la capacité
                 memset(buf,0,255);
                 fgets(buf, sizeof(buf), fd);
@@ -136,6 +142,9 @@ personnage get_player() {
                 if (player_endurance != NULL) {
                     p.capacite[i].cout_endurance = atoi(player_endurance);
                 }
+
+                 memset(buf,0,255);
+                fgets(buf, sizeof(buf), fd);
             }
             
         }

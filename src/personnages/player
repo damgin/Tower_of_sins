@@ -1,0 +1,22 @@
+Nom: Falthes
+PV Max: 500
+PV Actuels: 500
+Dégâts: 50
+Endurance: 500
+Bouclier: 0
+Poison: 0
+Tours de poison: 0
+Effet Bouclier: 0
+Effet Poison: 0
+Capacité 1:
+  Nom:Jugement
+  Puissance:100
+  Coût Endurance:250
+Capacité 2:
+  Nom:bouclier_divin
+  Puissance:100
+  Coût Endurance:150
+Capacité 3:
+  Nom:soin_rapide
+  Puissance:100
+  Coût Endurance:100

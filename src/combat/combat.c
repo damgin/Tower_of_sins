@@ -1,4 +1,4 @@
-
+#pragma once
 void combat() {
         
     personnage player = get_player(); 

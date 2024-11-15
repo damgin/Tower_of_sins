@@ -1,6 +1,9 @@
 #include "./global.h"
 
 int main() {
+
+
+
     personnage player = get_player();
     
     for (int i = 0; i < 3; i++)
