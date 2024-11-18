@@ -14,7 +14,7 @@ int main() {
         printf("\n");
     }
     
-    return 0;
+   
     //  save_player(&player);  debugg
     combat();
 

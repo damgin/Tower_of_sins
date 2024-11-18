@@ -30,13 +30,14 @@ void combat() {
         e->pv_actuel -= p->degat;  // Applique les dégâts de l'attaque normale
         if (e->pv_actuel < 0) {
             e->pv_actuel = 0;   ///pour éviter les bug (pv négatif qui proc pas la fin de combat)
+            break;
         }
-               
+            break;
             case 2:
-                printf("Choisissez une capacité (0-2): ");
+                printf("Choisissez une capacité (0-3): ");
                 int capacite_index;
                 scanf("%d", &capacite_index);
-                utiliserCapacite(p, e, capacite_index); // Utilise la capacité spéciale
+                utiliserCapacite(p, e, capacite_index); 
                 break;
             case 3:
                 printf("%s passe son tour.\n", p->nom);

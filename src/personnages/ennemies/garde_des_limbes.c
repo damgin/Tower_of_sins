@@ -41,7 +41,25 @@ void comportement_garde_des_limbes(personnage *garde, personnage *cible) {
     // attaque de base 
     else {
         printf("%s attaque normalement %s avec des dégâts de %d.\n", garde->nom, cible->nom, garde->degat);
-        cible->pv_actuel -= garde->degat;  // Applique les dégâts de l'attaque normale
+        if(cible->effet_bouclier = 1){
+           
+            if(garde->degat > cible->bouclier){
+          
+                int pv_loss = garde->degat - cible->bouclier;
+                cible->pv_actuel -= pv_loss;
+                cible->bouclier = 0;
+                cible->effet_bouclier = 0;
+            }else{
+        
+                cible->bouclier -= garde->degat;
+
+            }
+        }
+           if(cible->effet_bouclier = 0){
+
+            cible->pv_actuel -= garde->degat; // Applique les dégâts de l'attaque normale
+           } 
+           
         if (cible->pv_actuel < 0) {
             cible->pv_actuel = 0;   ///pour éviter les bug (pv négatif qui proc pas la fin de combat)
         }
@@ -54,9 +72,9 @@ void comportement_garde_des_limbes(personnage *garde, personnage *cible) {
 //spawn du mob
 void spawn_garde_des_limbes(personnage *garde) {
     strcpy(garde->nom, "Garde des Limbes");
-    garde->pv_max = 200;
-    garde->pv_actuel = 200;
-    garde->degat = 30;
+    garde->pv_max = 500;
+    garde->pv_actuel = 500;
+    garde->degat = 50;
     garde->endurance = 100;
    //// garde->p_comportement = comportement_garde_des_limbes; ///comprend cette ligne!!
     // Capacités du mob

@@ -37,10 +37,10 @@ void utiliserCapacite(personnage* p, personnage* e, int capacite_index) {
         return;
     }
 
-    // Réduit l'endurance du joueur
+    
     p->endurance -= cap.cout_endurance;
 
-    // Applique la capacité selon le type
+   
     switch (capacite_index) {
         case 0: // Jugement
             Jugement(p, e);
