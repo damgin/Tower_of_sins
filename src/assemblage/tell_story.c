@@ -1,7 +1,7 @@
 #pragma once
 // #include "story.txt"
 #include "../global.h"
-                                                
+
 
 void tell_story(){
 
@@ -9,10 +9,10 @@ void tell_story(){
     char* texte;
     char buf_filecontent[BUFSIZ];
 
-    FILE * fd_dessin = fopen ("story.txt","r");
-
-
-    fread(buf_filecontent,BUFSIZ,1,fd_dessin);
+    FILE * fd_dessin = fopen("src/assemblage/story.txt","r");
+    if (fd_dessin == NULL)      perror("fopen");
+    
+    fread(buf_filecontent,1,BUFSIZ,fd_dessin);
 
     // printf("%s\n",tour); /*affiche */
 
@@ -37,6 +37,7 @@ while (tour[i]!='\0')
 
   }
     i++;
+
 
 }
     i=0;

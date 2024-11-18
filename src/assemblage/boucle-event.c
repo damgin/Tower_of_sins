@@ -18,7 +18,7 @@ if (a == ENTRER)
 {
 
     // printf(" ca marche ");
-    int event = (float)rand()/RAND_MAX *2+1;/*mettre le nombre en fonction des events*/
+    int event = (float)rand()/RAND_MAX *3+1;/*mettre le nombre en fonction des events*/
     // printf("%d\n",event);
 
     switch (event)
@@ -28,10 +28,10 @@ if (a == ENTRER)
         combat();
         break;
     case 2:
-        printf("event 2 ");
+        printf("event 2\n");
         break;
     case 3:
-        printf("event 3");
+        printf("event 3\n");
 
     default:
         break;
