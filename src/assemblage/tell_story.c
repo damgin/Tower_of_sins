@@ -1,7 +1,7 @@
 #pragma once
-
+// #include "story.txt"
 #include "../global.h"
-
+                                                
 
 void tell_story(){
 

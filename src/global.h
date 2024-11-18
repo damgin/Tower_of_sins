@@ -17,8 +17,8 @@
 
 
 
-// #include "./assemblage/story.txt"
 #include "./assemblage/tell_story.c"
+// #include "./assemblage/story.txt"
 
 
 #include "./combat/personnage.c"
