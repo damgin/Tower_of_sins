@@ -1,4 +1,5 @@
 #pragma once
+#include "../global.h"
 
 void save_player(personnage *perso) {
     FILE *fichier = fopen("personnage.txt", "w");

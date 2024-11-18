@@ -1,3 +1,7 @@
+#pragma once
+#include "../global.h"
+
+
 
 void bouclierOmbre(personnage* p) {
     p->effet_bouclier = 1; // Active le bouclier

@@ -1,3 +1,7 @@
+#pragma once
+#include "../global.h"
+
+
 
 void comportement_garde_des_limbes(personnage *garde, personnage *cible) {
 
