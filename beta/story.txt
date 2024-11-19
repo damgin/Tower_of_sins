@@ -1,0 +1,60 @@
+                
+                
+                    🦇  
+                🦇      🦇  
+                     ^  
+                    | |  
+                    | |  
+                   /| |\  
+                 __|| ||__  
+                |  || ||  |  
+                |  || ||  |  
+                |__|| ||__|  
+                |  || ||  |  
+                |  || ||  |  
+             ___|__|| ||__|___  
+            |      || ||      |  
+            |      || ||      |  
+            |______|   |______|  
+            |      || ||      |  
+            |      || ||      |  
+         ___|______|   |______|___  
+         |         || ||         |  
+         |         || ||         |  
+         |_________|   |_________|  
+         |         || ||         |  
+         |         || ||         |  
+     ____|_________|   |_________|_____
+      |            || ||             |  
+      |            || ||             |  
+      |____________|   |_____________|  
+      |            || ||             |  
+      |            || ||             |  
+  ____|____________|   |_____________|____  
+       🦇           🦇            🦇  
+            🦇               🦇  
+
+#
+**********************************************
+*     Bienvenue dans la Tour des Péchés      *
+**********************************************
+
+
+Vous vous tenez face à la Tour des Péchés, une imposante structure qui s'élève vers un ciel sombre et orageux.
+La pierre noire de la tour semble absorber toute lumière, et l'air est lourd, chargé d'un étrange parfum de
+souffre et de désespoir. 
+Les gargouilles au sommet vous observent silencieusement, et des murmures lointains
+parviennent à vos oreilles comme des échos d'âmes perdues.
+
+Il n'y a plus de retour en arrière. En franchissant ces portes, vous vous aventurez dans l'inconnu, prêt à
+affronter des dangers insoupçonnés et à affronter vos propres démons.
+
+Tremblez, car chaque étage vous rapprochera de l'inéluctable, de l'ultime jugement...
+
+Êtes-vous prêt à entrer dans la Tour des Péchés ?
+
+Vous entrez dans un couloir lugubre, une porte se trouve sur votre gauche, que faites-vous ?
+
+1/ continuer votre chemin et ignorer cette porte
+2/ tenter d'ouvrir la porte
+
