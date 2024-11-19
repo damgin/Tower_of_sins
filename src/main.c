@@ -1,15 +1,20 @@
-#include "global.h"
+
+#include "./global.h"
 
 int main() {
-    personnage player = get_player();
 
-    // tell story
+    
+    tell_story();
+
+// while (1)
+// {
+//     // system("clear");
+//     event_handler();
+
+// }
 
 
-    // boucle evenement
-
-
-
-
+      
+ 
     return 0;
 }

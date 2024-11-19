@@ -2,6 +2,7 @@
     "files.associations": {
         "stdlib.h": "c",
         "get_player.c": "cpp",
-        "personnage.c": "cpp"
+        "personnage.c": "cpp",
+        "global.h": "c"
     }
 }
