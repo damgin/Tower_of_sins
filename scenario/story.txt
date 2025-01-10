@@ -4,7 +4,7 @@
     printf("                        🦇\n");
     printf("                    🦇  pas     🦇\n");
     printf("                         ^\n");
-    printf("                        || pas la tour de peach\n");
+    printf("                        ||\n");
     printf("                        ||\n");
     printf("                       /||\\\n");
     printf("                     __||||__\n");
@@ -52,5 +52,5 @@
     printf("\n");
     printf("Tremblez, car chaque étage vous rapprochera de l'inéluctable, de l'ultime jugement...\n");
     printf("\n");
-    printf("Êtes-vous prêt à entrer dans la Tour des Péchés ?\n");
+    printf("Êtes-vous prêt à entrer dans la Tour de Péchés ?\n");
     printf("\n");

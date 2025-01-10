@@ -3,6 +3,7 @@
         "stdlib.h": "c",
         "get_player.c": "cpp",
         "personnage.c": "cpp",
-        "global.h": "c"
+        "global.h": "c",
+        "unistd.h": "c"
     }
 }

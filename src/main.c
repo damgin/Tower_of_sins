@@ -4,7 +4,8 @@
 int main() {
 
     
-    tell_story();
+    combat();
+    
 
 // while (1)
 // {
